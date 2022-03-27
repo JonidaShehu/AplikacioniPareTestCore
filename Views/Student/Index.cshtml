@@ -1,0 +1,12 @@
+﻿@model IEnumerable<AplikacioniPareTestCore.Models.Student>
+
+    Klikoni tek ID e studentëve për të marrë më shumë detaje
+    <ul>
+       
+        
+        @foreach (var item in Model)
+       {
+           <li><a asp-controller="Student" asp-action="Gjej" asp-route-id="@item.Id">@item.Id</a></li>
+       }
+        
+    </ul>
